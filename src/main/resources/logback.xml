@@ -1,0 +1,36 @@
+<configuration>
+    <appender name="STDOUT"
+          class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>
+            logs/aplikasi.log
+        </file>
+        <encoder>
+            <pattern>%d %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <!--
+    <logger name="org.hibernate.type" level="TRACE">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </logger>
+    <logger name="org.hibernate.SQL" level="TRACE">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </logger>
+    <logger name="com.artivisi.belajar" level="DEBUG">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </logger>
+    -->
+    
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

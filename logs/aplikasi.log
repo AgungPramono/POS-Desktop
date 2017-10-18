@@ -1,0 +1,1425 @@
+2016-08-08 19:31:43,458 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-08 19:31:43,473 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-08 19:31:43,473 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-08 19:31:43,489 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-08 19:31:43,520 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-08 19:31:43,551 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-08 19:31:43,583 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-08 19:31:44,144 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-08 19:31:44,378 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-08 19:31:44,394 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-08 19:31:45,111 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-08 19:31:45,111 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-08 19:31:45,111 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-08 19:31:45,408 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-08 19:31:45,408 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-08 19:31:45,408 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-08 19:31:45,408 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-08 19:31:45,486 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-08 19:31:45,486 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-08 19:31:45,486 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-08 19:31:45,486 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-08 19:31:45,579 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-08 19:31:45,579 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-08 19:31:45,579 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-08 19:31:45,579 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-08 19:31:45,642 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-08 19:31:45,642 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-08 19:31:45,642 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-08 19:31:45,642 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-08 19:31:45,782 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-08 19:31:45,782 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-08 19:31:45,782 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-08 19:31:45,782 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-08 19:31:45,813 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-08 19:31:45,813 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-08 19:31:45,813 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-08 19:31:45,813 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-08 19:31:45,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-08 19:31:45,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-08 19:31:45,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-08 19:31:45,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-08 19:31:45,938 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-08 19:33:59,771 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1451, SQLState: 23000 
+2016-08-08 19:33:59,771 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`dbpenjualan`.`tb_penjualan`, CONSTRAINT `FK_cy08axq566lb06vyvm2agom8r` FOREIGN KEY (`id_kasir`) REFERENCES `tb_kasir` (`id`)) 
+2016-08-08 19:33:59,771 INFO  o.h.e.j.b.i.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements 
+2016-08-08 19:33:59,771 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 1451, SQLState: 23000 
+2016-08-08 19:33:59,771 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`dbpenjualan`.`tb_penjualan`, CONSTRAINT `FK_cy08axq566lb06vyvm2agom8r` FOREIGN KEY (`id_kasir`) REFERENCES `tb_kasir` (`id`)) 
+2016-08-09 19:40:27,577 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-09 19:40:27,606 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-09 19:40:27,608 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-09 19:40:27,613 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-09 19:40:27,702 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-09 19:40:27,825 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-09 19:40:28,004 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-09 19:40:30,774 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-09 19:40:31,122 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-09 19:40:31,137 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-09 19:40:32,115 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-09 19:40:32,116 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-09 19:40:32,120 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-09 19:40:33,090 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-09 19:40:33,090 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-09 19:40:33,091 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:40:33,092 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-09 19:40:33,216 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-09 19:40:33,216 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-09 19:40:33,217 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:40:33,217 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-09 19:40:33,350 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-09 19:40:33,351 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-09 19:40:33,351 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 19:40:33,351 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 19:40:33,404 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-09 19:40:33,404 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-09 19:40:33,404 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-09 19:40:33,405 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-09 19:40:33,465 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-09 19:40:33,465 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-09 19:40:33,466 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 19:40:33,466 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 19:40:33,520 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-09 19:40:33,521 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-09 19:40:33,523 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-09 19:40:33,523 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-09 19:40:33,641 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-09 19:40:33,643 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-09 19:40:33,643 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:40:33,643 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-09 19:40:33,662 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-09 19:41:35,166 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-09 19:41:35,196 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-09 19:41:35,198 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-09 19:41:35,201 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-09 19:41:35,233 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-09 19:41:35,273 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-09 19:41:35,311 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-09 19:41:35,975 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-09 19:41:36,282 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-09 19:41:36,288 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-09 19:41:37,068 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-09 19:41:37,068 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-09 19:41:37,074 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-09 19:41:37,125 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-09 19:41:37,125 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-09 19:41:37,126 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:41:37,126 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-09 19:41:37,160 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-09 19:41:37,160 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-09 19:41:37,160 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:41:37,160 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-09 19:41:37,192 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-09 19:41:37,192 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-09 19:41:37,192 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 19:41:37,192 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 19:41:37,223 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-09 19:41:37,224 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-09 19:41:37,224 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-09 19:41:37,224 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-09 19:41:37,249 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-09 19:41:37,249 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-09 19:41:37,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 19:41:37,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 19:41:37,292 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-09 19:41:37,293 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-09 19:41:37,293 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-09 19:41:37,293 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-09 19:41:37,353 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-09 19:41:37,354 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-09 19:41:37,354 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 19:41:37,354 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-09 19:41:37,355 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-09 20:03:01,705 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-09 20:03:01,719 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-09 20:03:01,722 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-09 20:03:01,724 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-09 20:03:01,764 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-09 20:03:01,803 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-09 20:03:01,840 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-09 20:03:02,433 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-09 20:03:02,733 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-09 20:03:02,739 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-09 20:03:03,528 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-09 20:03:03,529 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-09 20:03:03,532 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-09 20:03:03,620 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-09 20:03:03,620 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-09 20:03:03,621 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:03:03,621 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-09 20:03:03,647 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-09 20:03:03,648 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-09 20:03:03,648 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:03:03,648 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-09 20:03:03,677 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-09 20:03:03,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-09 20:03:03,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 20:03:03,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 20:03:03,708 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-09 20:03:03,708 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-09 20:03:03,708 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-09 20:03:03,708 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-09 20:03:03,730 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-09 20:03:03,730 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-09 20:03:03,731 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 20:03:03,731 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 20:03:03,759 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-09 20:03:03,760 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-09 20:03:03,760 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-09 20:03:03,760 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-09 20:03:03,805 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-09 20:03:03,805 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-09 20:03:03,805 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:03:03,806 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-09 20:03:03,807 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-09 20:26:01,670 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-09 20:26:01,684 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-09 20:26:01,686 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-09 20:26:01,689 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-09 20:26:01,730 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-09 20:26:01,767 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-09 20:26:01,804 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-09 20:26:02,446 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-09 20:26:02,751 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-09 20:26:02,758 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-09 20:26:03,538 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-09 20:26:03,538 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-09 20:26:03,541 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-09 20:26:03,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-09 20:26:03,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-09 20:26:03,601 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:26:03,601 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-09 20:26:03,625 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-09 20:26:03,625 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-09 20:26:03,626 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:26:03,626 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-09 20:26:03,670 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-09 20:26:03,670 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-09 20:26:03,671 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 20:26:03,672 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-09 20:26:03,700 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-09 20:26:03,700 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-09 20:26:03,700 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-09 20:26:03,702 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-09 20:26:03,728 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-09 20:26:03,728 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-09 20:26:03,728 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 20:26:03,729 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-09 20:26:03,789 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-09 20:26:03,790 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-09 20:26:03,790 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-09 20:26:03,790 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-09 20:26:03,831 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-09 20:26:03,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-09 20:26:03,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-09 20:26:03,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-09 20:26:03,833 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-18 08:23:38,662 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-18 08:23:38,677 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-18 08:23:38,693 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-18 08:23:38,693 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-18 08:23:38,755 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-18 08:23:38,849 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-18 08:23:38,989 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-18 08:23:39,972 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-18 08:23:40,300 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-18 08:23:40,300 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-18 08:23:41,173 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-18 08:23:41,173 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-18 08:23:41,173 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-18 08:23:42,546 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-18 08:23:42,546 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-18 08:23:42,546 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:23:42,546 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-18 08:23:42,655 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-18 08:23:42,655 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-18 08:23:42,655 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:23:42,655 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-18 08:23:42,780 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-18 08:23:42,780 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-18 08:23:42,780 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-18 08:23:42,780 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-18 08:23:42,889 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-18 08:23:42,889 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-18 08:23:42,889 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-18 08:23:42,889 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-18 08:23:42,999 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-18 08:23:42,999 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-18 08:23:42,999 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-18 08:23:42,999 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-18 08:23:43,061 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-18 08:23:43,061 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-18 08:23:43,061 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-18 08:23:43,061 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-18 08:23:43,186 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-18 08:23:43,186 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-18 08:23:43,186 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:23:43,186 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-18 08:23:43,217 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-18 08:26:50,704 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-18 08:26:50,720 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-18 08:26:50,720 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-18 08:26:50,720 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-18 08:26:50,767 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-18 08:26:50,798 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-18 08:26:50,829 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-18 08:26:51,422 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-18 08:26:51,640 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-18 08:26:51,640 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-18 08:26:52,327 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-18 08:26:52,327 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-18 08:26:52,327 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-18 08:26:52,405 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-18 08:26:52,405 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-18 08:26:52,405 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:26:52,405 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-18 08:26:52,436 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-18 08:26:52,436 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-18 08:26:52,436 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:26:52,436 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-18 08:26:52,467 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-18 08:26:52,467 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-18 08:26:52,467 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-18 08:26:52,467 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-18 08:26:52,483 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-18 08:26:52,483 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-18 08:26:52,483 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-18 08:26:52,483 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-18 08:26:52,498 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-18 08:26:52,498 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-18 08:26:52,498 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-18 08:26:52,498 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-18 08:26:52,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-18 08:26:52,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-18 08:26:52,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-18 08:26:52,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-18 08:26:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-18 08:26:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-18 08:26:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-18 08:26:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-18 08:26:52,545 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-08-19 20:37:06,761 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-08-19 20:37:06,824 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-08-19 20:37:06,839 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-08-19 20:37:06,839 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-08-19 20:37:06,902 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-08-19 20:37:07,011 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-08-19 20:37:07,214 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-08-19 20:37:08,727 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-08-19 20:37:09,039 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-08-19 20:37:09,039 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-08-19 20:37:10,053 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-08-19 20:37:10,053 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-08-19 20:37:10,069 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-08-19 20:37:11,364 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-08-19 20:37:11,364 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-08-19 20:37:11,364 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-19 20:37:11,364 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-08-19 20:37:11,457 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-08-19 20:37:11,457 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-08-19 20:37:11,457 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-19 20:37:11,457 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-08-19 20:37:11,504 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-08-19 20:37:11,504 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-08-19 20:37:11,504 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-19 20:37:11,504 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-08-19 20:37:11,613 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-08-19 20:37:11,613 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-08-19 20:37:11,613 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-08-19 20:37:11,613 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-08-19 20:37:11,691 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-08-19 20:37:11,691 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-08-19 20:37:11,691 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-19 20:37:11,691 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-08-19 20:37:11,769 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-08-19 20:37:11,769 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-08-19 20:37:11,769 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-08-19 20:37:11,769 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-08-19 20:37:12,003 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-08-19 20:37:12,003 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-08-19 20:37:12,003 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-08-19 20:37:12,003 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-08-19 20:37:12,003 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-09-23 20:06:47,661 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-09-23 20:06:47,688 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-09-23 20:06:47,697 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-09-23 20:06:47,700 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-09-23 20:06:47,788 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-09-23 20:06:47,839 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-09-23 20:06:47,959 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-09-23 20:06:48,761 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-09-23 20:06:49,070 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-09-23 20:06:49,086 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-09-23 20:06:50,127 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-09-23 20:06:50,127 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-09-23 20:06:50,131 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-09-23 20:06:50,251 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-09-23 20:06:50,251 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-09-23 20:06:50,252 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-09-23 20:06:50,253 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-09-23 20:06:50,292 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-09-23 20:06:50,292 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-09-23 20:06:50,293 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-09-23 20:06:50,293 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-09-23 20:06:50,328 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-09-23 20:06:50,329 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-09-23 20:06:50,329 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-09-23 20:06:50,329 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-09-23 20:06:50,392 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-09-23 20:06:50,392 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-09-23 20:06:50,392 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-09-23 20:06:50,393 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-09-23 20:06:50,415 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-09-23 20:06:50,416 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-09-23 20:06:50,416 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-09-23 20:06:50,416 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-09-23 20:06:50,442 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-09-23 20:06:50,442 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-09-23 20:06:50,442 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-09-23 20:06:50,442 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-09-23 20:06:50,530 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-09-23 20:06:50,531 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-09-23 20:06:50,532 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-09-23 20:06:50,532 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-09-23 20:06:50,569 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-10-05 18:39:36,576 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-10-05 18:39:36,607 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-10-05 18:39:36,623 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-10-05 18:39:36,623 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-10-05 18:39:36,701 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-10-05 18:39:36,904 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-10-05 18:39:37,138 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-10-05 18:39:38,230 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-10-05 18:39:38,510 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-10-05 18:39:38,526 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-10-05 18:39:39,602 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-10-05 18:39:39,602 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-10-05 18:39:39,602 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-10-05 18:39:40,211 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-10-05 18:39:40,211 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-10-05 18:39:40,211 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-05 18:39:40,211 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-10-05 18:39:40,336 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-10-05 18:39:40,336 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-10-05 18:39:40,336 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-05 18:39:40,336 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-10-05 18:39:40,476 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-10-05 18:39:40,476 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-10-05 18:39:40,476 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-05 18:39:40,476 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-05 18:39:40,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-10-05 18:39:40,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-10-05 18:39:40,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-10-05 18:39:40,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-10-05 18:39:40,570 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-10-05 18:39:40,570 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-10-05 18:39:40,570 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-05 18:39:40,570 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-05 18:39:40,616 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-10-05 18:39:40,616 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-10-05 18:39:40,616 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-10-05 18:39:40,616 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-10-05 18:39:40,679 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-10-05 18:39:40,679 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-10-05 18:39:40,679 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-05 18:39:40,679 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-10-05 18:39:40,694 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-10-05 18:40:22,978 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1451, SQLState: 23000 
+2016-10-05 18:40:22,978 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`dbpenjualan`.`tb_penjualan_detail`, CONSTRAINT `FK_8ao0vnl2ws8x01opt5fx1qn4b` FOREIGN KEY (`id_produk`) REFERENCES `tb_produk` (`id`)) 
+2016-10-05 18:40:22,978 INFO  o.h.e.j.b.i.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements 
+2016-10-05 18:40:22,978 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 1451, SQLState: 23000 
+2016-10-05 18:40:22,978 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - Cannot delete or update a parent row: a foreign key constraint fails (`dbpenjualan`.`tb_penjualan_detail`, CONSTRAINT `FK_8ao0vnl2ws8x01opt5fx1qn4b` FOREIGN KEY (`id_produk`) REFERENCES `tb_produk` (`id`)) 
+2016-10-06 18:41:25,519 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-10-06 18:41:25,612 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-10-06 18:41:25,628 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-10-06 18:41:25,643 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-10-06 18:41:25,862 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-10-06 18:41:26,049 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-10-06 18:41:26,299 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-10-06 18:41:29,465 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-10-06 18:41:30,230 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-10-06 18:41:30,261 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-10-06 18:41:32,024 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-10-06 18:41:32,024 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-10-06 18:41:32,024 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-10-06 18:41:33,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-10-06 18:41:33,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-10-06 18:41:33,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-06 18:41:33,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-10-06 18:41:33,646 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-10-06 18:41:33,646 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-10-06 18:41:33,646 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-06 18:41:33,646 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-10-06 18:41:33,740 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-10-06 18:41:33,740 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-10-06 18:41:33,740 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-06 18:41:33,740 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-06 18:41:33,771 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-10-06 18:41:33,771 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-10-06 18:41:33,771 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-10-06 18:41:33,771 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-10-06 18:41:33,833 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-10-06 18:41:33,833 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-10-06 18:41:33,833 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-06 18:41:33,833 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-06 18:41:33,896 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-10-06 18:41:33,896 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-10-06 18:41:33,896 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-10-06 18:41:33,896 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-10-06 18:41:33,911 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-10-06 18:41:33,911 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-10-06 18:41:33,911 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-06 18:41:33,911 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-10-06 18:41:33,943 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-10-28 19:59:49,338 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-10-28 19:59:49,385 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-10-28 19:59:49,401 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-10-28 19:59:49,401 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-10-28 19:59:49,432 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-10-28 19:59:49,479 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-10-28 19:59:49,603 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-10-28 19:59:50,181 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-10-28 19:59:50,383 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-10-28 19:59:50,399 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-10-28 19:59:51,101 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-10-28 19:59:51,101 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-10-28 19:59:51,101 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-10-28 19:59:51,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-10-28 19:59:51,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-10-28 19:59:51,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-28 19:59:51,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-10-28 19:59:51,304 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-10-28 19:59:51,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-10-28 19:59:51,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-28 19:59:51,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-10-28 19:59:51,382 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-10-28 19:59:51,382 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-10-28 19:59:51,382 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-28 19:59:51,382 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-10-28 19:59:51,413 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-10-28 19:59:51,413 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-10-28 19:59:51,413 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-10-28 19:59:51,413 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-10-28 19:59:51,444 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-10-28 19:59:51,444 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-10-28 19:59:51,444 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-28 19:59:51,444 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-10-28 19:59:51,460 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-10-28 19:59:51,460 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-10-28 19:59:51,460 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-10-28 19:59:51,475 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-10-28 19:59:51,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-10-28 19:59:51,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-10-28 19:59:51,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-10-28 19:59:51,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-10-28 19:59:51,538 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-01 07:25:48,068 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-01 07:25:48,083 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-01 07:25:48,099 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-01 07:25:48,099 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-01 07:25:48,161 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-01 07:25:48,239 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-01 07:25:48,364 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-01 07:25:50,252 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-01 07:25:50,610 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-01 07:25:50,610 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-01 07:25:51,531 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-01 07:25:51,531 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-01 07:25:51,531 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-01 07:25:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-01 07:25:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-01 07:25:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-01 07:25:52,545 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-01 07:25:52,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-01 07:25:52,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-01 07:25:52,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-01 07:25:52,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-01 07:25:52,779 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-01 07:25:52,779 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-01 07:25:52,779 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-01 07:25:52,779 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-01 07:25:52,841 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-01 07:25:52,841 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-01 07:25:52,841 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-01 07:25:52,841 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-01 07:25:52,935 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-01 07:25:52,935 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-01 07:25:52,935 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-01 07:25:52,935 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-01 07:25:52,982 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-01 07:25:52,982 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-01 07:25:52,982 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-01 07:25:52,982 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-01 07:25:53,106 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-01 07:25:53,106 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-01 07:25:53,106 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-01 07:25:53,106 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-01 07:25:53,122 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-21 07:07:41,820 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-21 07:07:41,851 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-21 07:07:41,851 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-21 07:07:41,851 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-21 07:07:41,898 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-21 07:07:41,929 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-21 07:07:41,976 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-21 07:07:42,569 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-21 07:07:42,787 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-21 07:07:42,803 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-21 07:07:43,630 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-21 07:07:43,630 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-21 07:07:43,630 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-21 07:07:43,801 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-21 07:07:43,801 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-21 07:07:43,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-21 07:07:43,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-21 07:07:43,879 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-21 07:07:43,879 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-21 07:07:43,879 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-21 07:07:43,879 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-21 07:07:43,926 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-21 07:07:43,926 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-21 07:07:43,926 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-21 07:07:43,926 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-21 07:07:43,957 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-21 07:07:43,957 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-21 07:07:43,957 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-21 07:07:43,957 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-21 07:07:43,989 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-21 07:07:43,989 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-21 07:07:43,989 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-21 07:07:43,989 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-21 07:07:44,020 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-21 07:07:44,020 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-21 07:07:44,020 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-21 07:07:44,020 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-21 07:07:44,051 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-21 07:07:44,051 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-21 07:07:44,051 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-21 07:07:44,051 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-21 07:07:44,051 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:11:38,790 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:11:38,821 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:11:38,821 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:11:38,837 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:11:38,915 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:11:38,961 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:11:39,086 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:11:39,960 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:11:40,256 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:11:40,303 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:11:41,364 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:11:41,379 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:11:41,379 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:11:42,206 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:11:42,206 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:11:42,206 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:11:42,206 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:11:42,315 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:11:42,315 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:11:42,315 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:11:42,315 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:11:42,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:11:42,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:11:42,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:11:42,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:11:42,456 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:11:42,456 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:11:42,456 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:11:42,456 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:11:42,534 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:11:42,534 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:11:42,534 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:11:42,534 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:11:42,596 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:11:42,596 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:11:42,596 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:11:42,596 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:11:42,721 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:11:42,721 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:11:42,721 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:11:42,721 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:11:42,737 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:25:06,681 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:25:06,697 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:25:06,697 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:25:06,697 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:25:06,728 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:25:06,759 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:25:06,806 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:25:07,399 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:25:07,617 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:25:07,633 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:25:08,397 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:25:08,397 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:25:08,413 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:25:08,522 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:25:08,522 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:25:08,522 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:25:08,522 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:25:08,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:25:08,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:25:08,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:25:08,538 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:25:08,569 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:25:08,569 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:25:08,569 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:25:08,569 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:25:08,584 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:25:08,584 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:25:08,584 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:25:08,584 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:25:08,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:25:08,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:25:08,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:25:08,600 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:25:08,631 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:25:08,631 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:25:08,631 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:25:08,631 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:25:08,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:25:08,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:25:08,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:25:08,678 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:25:08,678 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:27:33,797 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:27:33,813 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:27:33,813 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:27:33,813 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:27:33,844 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:27:33,875 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:27:33,922 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:27:34,499 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:27:34,733 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:27:34,733 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:27:35,498 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:27:35,498 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:27:35,498 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:27:35,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:27:35,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:27:35,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:27:35,529 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:27:35,560 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:27:35,560 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:27:35,560 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:27:35,560 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:27:35,576 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:27:35,576 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:27:35,576 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:27:35,576 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:27:35,591 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:27:35,591 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:27:35,591 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:27:35,591 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:27:35,607 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:27:35,623 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:27:35,623 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:27:35,623 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:27:35,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:27:35,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:27:35,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:27:35,638 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:27:35,654 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:27:35,669 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:27:35,669 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:27:35,669 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:27:35,669 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:30:05,630 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:30:05,646 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:30:05,646 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:30:05,646 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:30:05,677 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:30:05,708 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:30:05,755 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:30:06,286 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:30:06,504 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:30:06,504 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:30:07,237 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:30:07,237 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:30:07,253 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:30:07,331 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:30:07,331 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:30:07,331 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:30:07,331 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:30:07,346 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:30:07,346 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:30:07,346 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:30:07,346 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:30:07,378 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:30:07,378 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:30:07,378 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:30:07,378 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:30:07,393 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:30:07,393 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:30:07,393 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:30:07,393 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:30:07,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:30:07,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:30:07,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:30:07,409 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:30:07,424 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:30:07,424 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:30:07,424 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:30:07,424 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:30:07,440 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:30:07,440 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:30:07,440 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:30:07,456 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:30:07,456 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:31:34,824 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:31:34,839 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:31:34,839 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:31:34,839 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:31:34,886 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:31:34,917 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:31:34,949 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:31:35,541 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:31:35,760 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:31:35,760 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:31:36,493 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:31:36,493 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:31:36,493 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:31:36,571 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:31:36,571 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:31:36,571 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:31:36,571 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:31:36,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:31:36,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:31:36,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:31:36,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:31:36,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:31:36,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:31:36,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:31:36,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:31:36,633 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:31:36,633 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:31:36,633 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:31:36,633 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:31:36,649 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:31:36,649 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:31:36,649 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:31:36,649 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:31:36,680 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:31:36,680 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:31:36,680 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:31:36,680 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:31:36,711 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:31:36,711 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:31:36,711 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:31:36,711 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:31:36,711 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:32:53,836 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:32:53,836 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:32:53,852 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:32:53,852 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:32:53,883 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:32:53,914 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:32:53,945 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:32:54,491 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:32:54,710 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:32:54,725 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:32:55,474 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:32:55,474 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:32:55,490 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:32:55,552 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:32:55,552 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:32:55,552 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:32:55,552 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:32:55,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:32:55,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:32:55,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:32:55,568 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:32:55,599 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:32:55,599 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:32:55,599 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:32:55,599 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:32:55,615 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:32:55,615 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:32:55,615 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:32:55,615 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:32:55,630 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:32:55,630 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:32:55,630 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:32:55,630 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:32:55,661 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:32:55,661 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:32:55,661 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:32:55,661 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:32:55,677 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:32:55,677 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:32:55,677 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:32:55,677 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:32:55,677 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:33:16,793 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:33:16,809 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:33:16,809 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:33:16,809 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:33:16,840 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:33:16,871 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:33:16,902 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:33:17,448 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:33:17,667 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:33:17,682 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:33:18,431 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:33:18,431 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:33:18,447 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:33:18,509 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:33:18,509 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:33:18,509 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:33:18,509 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:33:18,525 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:33:18,525 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:33:18,525 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:33:18,525 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:33:18,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:33:18,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:33:18,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:33:18,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:33:18,556 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:33:18,556 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:33:18,556 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:33:18,556 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:33:18,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:33:18,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:33:18,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:33:18,587 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:33:18,603 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:33:18,603 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:33:18,603 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:33:18,603 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:33:18,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:33:18,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:33:18,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:33:18,618 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:33:18,618 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:41:45,175 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:41:45,190 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:41:45,190 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:41:45,190 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:41:45,237 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:41:45,268 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:41:45,300 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:41:45,799 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:41:46,048 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:41:46,048 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:41:46,797 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:41:46,797 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:41:46,813 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:41:46,844 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:41:46,844 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:41:46,844 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:41:46,844 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:41:46,860 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:41:46,860 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:41:46,860 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:41:46,860 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:41:46,891 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:41:46,891 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:41:46,891 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:41:46,891 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:41:46,906 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:41:46,906 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:41:46,906 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:41:46,906 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:41:46,922 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:41:46,922 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:41:46,922 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:41:46,922 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:41:46,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:41:46,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:41:46,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:41:46,938 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:41:46,953 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:41:46,953 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:41:46,953 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:41:46,953 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:41:46,953 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:47:25,198 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:47:25,214 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:47:25,214 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:47:25,214 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:47:25,245 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:47:25,292 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:47:25,323 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:47:25,854 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:47:26,088 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:47:26,088 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:47:26,852 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:47:26,852 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:47:26,852 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:47:26,930 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:47:26,930 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:47:26,930 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:47:26,930 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:47:26,961 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:47:26,961 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:47:26,961 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:47:26,961 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:47:26,977 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:47:26,977 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:47:26,977 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:47:26,977 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:47:26,992 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:47:26,992 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:47:26,992 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:47:26,992 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:47:27,008 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:47:27,008 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:47:27,008 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:47:27,008 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:47:27,024 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:47:27,024 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:47:27,024 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:47:27,024 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:47:27,055 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:47:27,055 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:47:27,055 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:47:27,055 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:47:27,055 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-26 19:48:29,007 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-26 19:48:29,023 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-26 19:48:29,023 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-26 19:48:29,023 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-26 19:48:29,054 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-26 19:48:29,101 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-26 19:48:29,132 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-26 19:48:29,740 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-26 19:48:29,959 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-26 19:48:29,959 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-26 19:48:30,692 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-26 19:48:30,692 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-26 19:48:30,707 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-26 19:48:30,739 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-26 19:48:30,739 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-26 19:48:30,739 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:48:30,739 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-26 19:48:30,754 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-26 19:48:30,754 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-26 19:48:30,754 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:48:30,754 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-26 19:48:30,770 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-26 19:48:30,770 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-26 19:48:30,770 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:48:30,770 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-26 19:48:30,785 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-26 19:48:30,785 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-26 19:48:30,785 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-26 19:48:30,785 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-26 19:48:30,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-26 19:48:30,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-26 19:48:30,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:48:30,817 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-26 19:48:30,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-26 19:48:30,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-26 19:48:30,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-26 19:48:30,832 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-26 19:48:30,848 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-26 19:48:30,848 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-26 19:48:30,848 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-26 19:48:30,848 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-26 19:48:30,848 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-11-27 12:04:01,686 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-11-27 12:04:01,717 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-11-27 12:04:01,733 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-11-27 12:04:01,733 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-11-27 12:04:01,795 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-11-27 12:04:01,889 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-11-27 12:04:02,061 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-11-27 12:04:04,182 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-11-27 12:04:04,463 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-11-27 12:04:04,463 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-11-27 12:04:05,430 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-11-27 12:04:05,430 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-11-27 12:04:05,430 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-11-27 12:04:05,976 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-11-27 12:04:05,976 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-11-27 12:04:05,976 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-27 12:04:05,976 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-11-27 12:04:06,054 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-11-27 12:04:06,054 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-11-27 12:04:06,054 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-27 12:04:06,054 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-11-27 12:04:06,117 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-11-27 12:04:06,117 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-11-27 12:04:06,117 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-27 12:04:06,117 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-11-27 12:04:06,148 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-11-27 12:04:06,148 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-11-27 12:04:06,148 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-11-27 12:04:06,163 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-11-27 12:04:06,195 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-11-27 12:04:06,195 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-11-27 12:04:06,195 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-27 12:04:06,195 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-11-27 12:04:06,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-11-27 12:04:06,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-11-27 12:04:06,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-11-27 12:04:06,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-11-27 12:04:06,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-11-27 12:04:06,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-11-27 12:04:06,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-11-27 12:04:06,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-11-27 12:04:06,335 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-12-09 18:19:51,252 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-12-09 18:19:51,298 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-12-09 18:19:51,314 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-12-09 18:19:51,314 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-12-09 18:19:51,408 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-12-09 18:19:51,532 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-12-09 18:19:51,673 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-12-09 18:19:53,295 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-12-09 18:19:53,654 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-12-09 18:19:53,670 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-12-09 18:19:54,637 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-12-09 18:19:54,637 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-12-09 18:19:54,637 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-12-09 18:19:56,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-12-09 18:19:56,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-12-09 18:19:56,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:19:56,540 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-12-09 18:19:56,759 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-12-09 18:19:56,759 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-12-09 18:19:56,759 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:19:56,759 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-12-09 18:19:56,993 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-12-09 18:19:56,993 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-12-09 18:19:56,993 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:19:56,993 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:19:57,133 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-12-09 18:19:57,133 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-12-09 18:19:57,149 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-12-09 18:19:57,149 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-12-09 18:19:57,305 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-12-09 18:19:57,305 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-12-09 18:19:57,305 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:19:57,305 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:19:57,367 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-12-09 18:19:57,367 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-12-09 18:19:57,367 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-12-09 18:19:57,367 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-12-09 18:19:57,507 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-12-09 18:19:57,507 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-12-09 18:19:57,507 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:19:57,507 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-12-09 18:19:57,539 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-12-09 18:24:29,432 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-12-09 18:24:29,432 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-12-09 18:24:29,432 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-12-09 18:24:29,447 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-12-09 18:24:29,478 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-12-09 18:24:29,510 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-12-09 18:24:29,541 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-12-09 18:24:30,196 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-12-09 18:24:30,414 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-12-09 18:24:30,430 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-12-09 18:24:31,163 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-12-09 18:24:31,163 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-12-09 18:24:31,179 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-12-09 18:24:31,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-12-09 18:24:31,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-12-09 18:24:31,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:24:31,241 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-12-09 18:24:31,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-12-09 18:24:31,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-12-09 18:24:31,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:24:31,257 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-12-09 18:24:31,272 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-12-09 18:24:31,272 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-12-09 18:24:31,272 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:24:31,272 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:24:31,304 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-12-09 18:24:31,304 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-12-09 18:24:31,304 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-12-09 18:24:31,304 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-12-09 18:24:31,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-12-09 18:24:31,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-12-09 18:24:31,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:24:31,319 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:24:31,350 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-12-09 18:24:31,350 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-12-09 18:24:31,350 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-12-09 18:24:31,350 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-12-09 18:24:31,366 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-12-09 18:24:31,366 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-12-09 18:24:31,366 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:24:31,366 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-12-09 18:24:31,366 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-12-09 18:25:20,848 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-12-09 18:25:20,863 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-12-09 18:25:20,863 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-12-09 18:25:20,879 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-12-09 18:25:20,910 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-12-09 18:25:20,957 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-12-09 18:25:20,988 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-12-09 18:25:21,316 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2016-12-09 18:25:21,331 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2016-12-09 18:25:21,331 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2016-12-09 18:25:21,331 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2016-12-09 18:25:21,363 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2016-12-09 18:25:21,394 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2016-12-09 18:25:21,441 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2016-12-09 18:25:21,815 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-12-09 18:25:22,018 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2016-12-09 18:25:22,158 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-12-09 18:25:22,174 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-12-09 18:25:22,267 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2016-12-09 18:25:22,267 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2016-12-09 18:25:23,063 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-12-09 18:25:23,063 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-12-09 18:25:23,063 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-12-09 18:25:23,063 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2016-12-09 18:25:23,079 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2016-12-09 18:25:23,079 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2016-12-09 18:25:23,141 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-12-09 18:25:23,141 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-12-09 18:25:23,141 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,141 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-12-09 18:25:23,157 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_distributor 
+2016-12-09 18:25:23,157 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [alamat_distributor, nama_distributor, id, kode_distributor, create_date] 
+2016-12-09 18:25:23,157 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,157 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_tdc88h2kvggdhvdi8kl1njnbd, primary] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_kasir 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [password, alamat_kasir, user_name, nama_kasir, id, kode_kasir, create_date, jenis_kelamin] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,203 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_2t9t4jo5i271tdwjlx2tu7699, primary] 
+2016-12-09 18:25:23,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-12-09 18:25:23,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-12-09 18:25:23,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:25:23,250 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:25:23,266 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian 
+2016-12-09 18:25:23,266 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [total_pembelian, id_petugas, id, create_date, id_distributor, tgl_pembelian] 
+2016-12-09 18:25:23,266 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9rd8a485bm0r5yp6cwl3iee6l, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:25:23,266 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9rd8a485bm0r5yp6cwl3iee6l, primary, fk_e1wxmkjmewvdv6smplf6v2d86] 
+2016-12-09 18:25:23,281 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-12-09 18:25:23,281 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-12-09 18:25:23,281 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-12-09 18:25:23,281 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-12-09 18:25:23,313 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-12-09 18:25:23,313 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-12-09 18:25:23,313 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:25:23,313 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_pembelian_detail 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_produk, quantity, harga, subtotal, id, create_date, id_pembelian] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_9s6ar021krem35gvvllddsp4g, fk_2n9dxo089kuocuax1owhiise4, primary] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-12-09 18:25:23,359 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-12-09 18:25:23,406 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan 
+2016-12-09 18:25:23,406 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [tgl_transaksi, id_kasir, id, create_date, total_bayar] 
+2016-12-09 18:25:23,406 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:25:23,406 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [primary, fk_cy08axq566lb06vyvm2agom8r] 
+2016-12-09 18:25:23,422 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-12-09 18:25:23,422 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-12-09 18:25:23,422 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,422 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-12-09 18:25:23,422 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2016-12-09 18:25:23,469 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_penjualan_detail 
+2016-12-09 18:25:23,469 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [id_penjualan, id_produk, quantity, harga, subtotal, id, create_date] 
+2016-12-09 18:25:23,469 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b] 
+2016-12-09 18:25:23,469 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [fk_b71oe3xkps6l0keb8ixekk71c, fk_8ao0vnl2ws8x01opt5fx1qn4b, primary] 
+2016-12-09 18:25:23,484 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: dbpenjualan.tb_produk 
+2016-12-09 18:25:23,484 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [nama_produk, harga, jumlah, id, create_date, kode_produk] 
+2016-12-09 18:25:23,484 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
+2016-12-09 18:25:23,484 INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_e4mx9rtvg4tr7vihpy96crm68, primary] 
+2016-12-09 18:25:23,500 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2017-10-07 07:55:21,052 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2017-10-07 07:55:21,083 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2017-10-07 07:55:21,083 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2017-10-07 07:55:21,083 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2017-10-07 07:55:21,161 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2017-10-07 07:55:21,224 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2017-10-07 07:55:21,380 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2017-10-07 07:55:21,848 WARN  o.h.e.j.internal.JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Cannot create PoolableConnectionFactory (Unknown database 'dbpenjualan') 
+2017-10-07 07:55:21,863 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2017-10-07 07:55:21,879 INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null 
+2017-10-07 07:55:22,082 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2017-10-07 07:55:22,097 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2017-10-07 07:55:22,831 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2017-10-07 07:55:22,831 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2017-10-07 07:55:22,877 ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000319: Could not get database metadata 
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database 'dbpenjualan')
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044) ~[commons-dbcp-1.4.jar:1.4]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1930) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at com.agung.pos.Main.initContext(Main.java:89) [classes/:na]
+	at com.agung.pos.Main.main(Main.java:149) [classes/:na]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'dbpenjualan'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1665) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1207) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545) ~[commons-dbcp-1.4.jar:1.4]
+	... 40 common frames omitted
+2017-10-07 07:55:22,877 ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000299: Could not complete schema update 
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database 'dbpenjualan')
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044) ~[commons-dbcp-1.4.jar:1.4]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1930) ~[hibernate-core-4.3.11.Final.jar:4.3.11.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:372) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:454) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:439) [spring-orm-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1145) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1069) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:967) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:543) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:305) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:301) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772) [spring-beans-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:834) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83) [spring-context-4.2.0.RELEASE.jar:4.2.0.RELEASE]
+	at com.agung.pos.Main.initContext(Main.java:89) [classes/:na]
+	at com.agung.pos.Main.main(Main.java:149) [classes/:na]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'dbpenjualan'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:980) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:871) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1665) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1207) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2249) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2280) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2079) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:794) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:44) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:399) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:325) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545) ~[commons-dbcp-1.4.jar:1.4]
+	... 40 common frames omitted
+2017-10-07 07:55:23,533 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null 
+2017-10-07 07:55:23,533 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot create PoolableConnectionFactory (Unknown database 'dbpenjualan') 
+2017-10-07 07:55:58,545 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2017-10-07 07:55:58,561 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2017-10-07 07:55:58,561 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2017-10-07 07:55:58,561 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2017-10-07 07:55:58,592 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/D:/5.PROJECK/JAVA%20DEVELOPMENT/5.JAVA%20DESKTOP%20APP/Aplikasi-Penjualan-Barang-Hibernate/target/classes/hibernate.cfg.xml 
+2017-10-07 07:55:58,639 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2017-10-07 07:55:58,670 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2017-10-07 07:55:59,278 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2017-10-07 07:55:59,497 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2017-10-07 07:55:59,512 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2017-10-07 07:56:00,246 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2017-10-07 07:56:00,246 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2017-10-07 07:56:00,246 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2017-10-07 07:56:00,261 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2017-10-07 07:56:00,277 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2017-10-07 07:56:00,292 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2017-10-07 07:56:06,205 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
