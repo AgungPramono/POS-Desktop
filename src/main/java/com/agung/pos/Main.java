@@ -22,16 +22,15 @@ import com.agung.pos.ui.LaunchProgressBar;
 import com.agung.pos.ui.LoginDialog;
 import com.agung.pos.ui.MainMenu;
 import com.agung.pos.ui.util.PasswordHelper;
-
-
+import com.jgoodies.looks.Options;
+import com.jgoodies.looks.plastic.PlasticXPLookAndFeel;
+import com.jgoodies.looks.plastic.theme.ExperienceBlue;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -139,7 +138,7 @@ public class Main {
                 e.printStackTrace();
             }
             pb.dispose();
-            initLogin();
+//            initLogin();
         }
     }
     
@@ -149,19 +148,12 @@ public class Main {
         initContext();
         //checkDefaultUser();
         
-       try {/**
+       try {
             PlasticXPLookAndFeel laf = new PlasticXPLookAndFeel();
-            PlasticLookAndFeel.setCurrentTheme(new ExperienceBlue());
+            PlasticXPLookAndFeel.setCurrentTheme(new ExperienceBlue());
             Options.setPopupDropShadowEnabled(true);
-            UIManager.setLookAndFeel(laf);*/ 
-           /***/
-//           for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-//                if ("Nimbus".equals(info.getName())) {
-//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-//                    break;
-//                }
-//            }
-           UIManager.setLookAndFeel("com.jtattoo.plaf.aero.AeroLookAndFeel");
+            UIManager.setLookAndFeel(laf);
+           
         } catch (UnsupportedLookAndFeelException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -170,7 +162,7 @@ public class Main {
             @Override
             public void run() {
                 initLogin();
-               // LaunchSplashScreen();
+//                LaunchSplashScreen();
             }
         });
     }

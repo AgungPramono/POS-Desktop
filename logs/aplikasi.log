@@ -1423,3 +1423,69 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown da
 2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
 2017-10-07 07:56:00,308 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
 2017-10-07 07:56:06,205 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2020-11-18 07:51:35,679 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+2020-11-18 07:51:35,695 INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final} 
+2020-11-18 07:51:35,695 INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
+2020-11-18 07:51:35,703 INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
+2020-11-18 07:51:35,735 INFO  org.hibernate.cfg.Configuration - HHH000044: Configuring from URL: file:/C:/Users/agung/Desktop/POS-Desktop/target/classes/hibernate.cfg.xml 
+2020-11-18 07:51:35,775 WARN  o.h.i.util.xml.DTDEntityResolver - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide! 
+2020-11-18 07:51:35,837 INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null 
+2020-11-18 07:51:37,836 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 07:51:38,134 INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2020-11-18 07:51:38,134 INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
+2020-11-18 07:51:38,617 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
+2020-11-18 07:51:38,617 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
+2020-11-18 07:51:38,617 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
+2020-11-18 07:51:38,657 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2020-11-18 07:51:38,665 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2020-11-18 07:51:38,665 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2020-11-18 07:51:38,673 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2020-11-18 07:51:38,681 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2020-11-18 07:51:38,697 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2020-11-18 07:51:38,705 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2020-11-18 07:51:38,705 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2020-11-18 07:51:38,713 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2020-11-18 07:51:38,721 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2020-11-18 07:51:38,721 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2020-11-18 07:51:38,729 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2020-11-18 07:51:38,737 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2020-11-18 07:51:38,745 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2020-11-18 07:51:38,745 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_distributor 
+2020-11-18 07:51:38,757 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_kasir 
+2020-11-18 07:51:38,758 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian 
+2020-11-18 07:51:38,766 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_pembelian_detail 
+2020-11-18 07:51:38,766 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan 
+2020-11-18 07:51:38,774 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_penjualan_detail 
+2020-11-18 07:51:38,783 INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: tb_produk 
+2020-11-18 07:51:40,145 INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
+2020-11-18 08:01:30,666 WARN  o.s.c.s.ClassPathXmlApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'distributorDao': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [org.springframework.orm.hibernate4.HibernateTransactionManager] for bean with name 'transactionManager' defined in URL [file:/C:/Users/agung/Desktop/POS-Desktop/target/classes/ApplicationConfig.xml]; nested exception is java.lang.ClassNotFoundException: org.springframework.orm.hibernate4.HibernateTransactionManager 
+2020-11-18 08:02:39,036 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 08:02:39,420 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 08:02:39,918 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 08:02:41,852 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 08:02:43,995 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2020-11-18 08:04:44,924 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 08:04:45,236 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 08:04:45,772 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 08:04:47,637 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 08:04:49,637 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2020-11-18 08:05:17,652 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 08:05:17,980 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 08:05:18,605 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 08:05:20,463 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 08:05:22,274 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2020-11-18 08:07:01,922 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 08:07:02,226 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 08:07:02,723 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 08:07:04,568 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 08:07:06,339 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2020-11-18 08:07:45,520 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 08:07:45,813 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 08:07:46,245 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 08:07:47,865 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 08:07:49,527 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2020-11-18 10:52:49,870 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.20.Final 
+2020-11-18 10:52:50,352 WARN  org.hibernate.orm.deprecation - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time. 
+2020-11-18 10:52:50,899 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+2020-11-18 10:52:53,081 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect 
+2020-11-18 10:52:55,158 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 

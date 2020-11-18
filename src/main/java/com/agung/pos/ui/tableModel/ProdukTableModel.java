@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import javax.swing.table.AbstractTableModel;
-import org.springframework.format.number.NumberFormatter;
 
 /**
  *
